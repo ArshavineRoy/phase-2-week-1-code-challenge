@@ -19,6 +19,11 @@ body {
   height: 100vh;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .my-navbar-list {
   display: flex;
   align-items: center;
@@ -64,7 +69,8 @@ input[type="search"] {
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 24%;
-  /* position: sticky;
-  bottom: 0; */
+  align-items: center;
+  padding-block: 10px;
+  position: sticky;
+  bottom: 0;
 }
