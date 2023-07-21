@@ -4,15 +4,15 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg sticky">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand logo" href="#">
           <img
-            src="../public/logo.png"
+            src="/logo.svg"
             alt="Logo"
             width="30"
-            height="24"
+            height="30"
             className="d-inline-block align-text-top"
           />
-          Bank of Flatiron
+          <span className="bank-name">Bank of Flatiron</span>
         </a>
         <button
           className="navbar-toggler"

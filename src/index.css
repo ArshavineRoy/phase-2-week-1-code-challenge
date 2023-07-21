@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f2f2f2;
+  padding-inline: 8%;
 }
 
 code {
@@ -27,7 +28,6 @@ code {
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-right: 1%;
 }
 
 .my-navbar-list ul li a {
@@ -39,12 +39,23 @@ code {
 }
 
 .dropdown-menu {
-  /* background-color: hsl(60, 56%, 91%); */
   background-color: whitesmoke;
 }
 
 .my-navbar-list ul li {
   padding-inline: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1%;
+}
+
+.bank-name {
+  padding-left: 5px;
+  font-weight: 500;
 }
 
 form {
