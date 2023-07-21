@@ -1,6 +1,6 @@
 # Bank of Flatiron
 
-# phase-2-week-1-code-challenge
+## Phase 2 : Week 1 Code Challenge
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 [![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com)
@@ -11,7 +11,7 @@
 
 ## Introduction
 
-Bank of Flatiron is a React mini web app built as part of phase 2 week 1 code challenge to practice on components, props, state, events, and data fetching in React.
+Bank of Flatiron is a React mini web app built as part of Phase 2: Week 1 code challenge to practice on components, props, state, events, and data fetching in React.
 
 This application displays a list of your recent bank transactions, among other features.
 
@@ -38,19 +38,19 @@ Jest (v27.0.4) - For running unit tests.
 
 ## Project Setup
 
-### `1. Clone the repository`
+### 1. Clone the repository
 
 ```
 git clone https://github.com/ArshavineRoy/phase-2-week-1-code-challenge
 ```
 
-### `2. Navigate to the project directory`
+### 2. Navigate to the project directory
 
 ```
 cd phase-2-week-1-code-challenge
 ```
 
-### `3. Install required dependencies`
+### 3. Install required dependencies
 
 In the project directory, install the required dependencies
 
@@ -58,7 +58,7 @@ In the project directory, install the required dependencies
 npm install
 ```
 
-### `4. Install and start JSON server`
+### 4. Install and start JSON server
 
 #### Install JSON server
 
@@ -103,7 +103,7 @@ Sample:
 ]
 ```
 
-### `5. Start the development server`
+### 5. Start the development server
 
 ```
 npm start
@@ -111,7 +111,7 @@ npm start
 
 This runs the app in the development mode.
 
-### `6. Open your browser and interact with the app`
+### 6. Open your browser and interact with the app
 
 The app will open on your default browser automatically when `npm start` is run, but if it doesn't, open [http://localhost:3000](http://localhost:3000) to view it.
 
