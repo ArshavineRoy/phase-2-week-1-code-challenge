@@ -3,20 +3,20 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             <img
-              src="/docs/5.3/assets/brand/bootstrap-logo.svg"
+              src="../public/logo.png"
               alt="Logo"
               width="30"
               height="24"
-              class="d-inline-block align-text-top"
+              className="d-inline-block align-text-top"
             />
             Bank of Flatiron
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -24,21 +24,21 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse my-navbar-list"
+            className="collapse navbar-collapse my-navbar-list"
             id="navbarSupportedContent"
           >
-            <ul class="nav nav-underline">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+            <ul className="nav nav-underline">
+              <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="#">
                   Home
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   href="#"
                   role="button"
@@ -46,63 +46,63 @@ function Navbar() {
                 >
                   For You
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item dropdown-list-item" href="#">
+                    <a className="dropdown-item dropdown-list-item" href="#">
                       Open Account
                     </a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item dropdown-list-item" href="#">
+                    <a className="dropdown-item dropdown-list-item" href="#">
                       Get a Card
                     </a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item dropdown-list-item" href="#">
+                    <a className="dropdown-item dropdown-list-item" href="#">
                       Get a Loan
                     </a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item dropdown-list-item" href="#">
+                    <a className="dropdown-item dropdown-list-item" href="#">
                       Investments
                     </a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item dropdown-list-item" href="#">
+                    <a className="dropdown-item dropdown-list-item" href="#">
                       Forex
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   For Corporates
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   About Us{" "}
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Blog
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Deals
                 </a>
               </li>
