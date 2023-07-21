@@ -7,7 +7,7 @@ function Transactions() {
         <table className="table table-striped">
           <thead>
             <tr className="table-primary">
-              <th scope="col">ID</th>
+              <th scope="col">No.</th>
               <th scope="col">Date</th>
               <th scope="col">Description</th>
               <th scope="col">Category</th>
