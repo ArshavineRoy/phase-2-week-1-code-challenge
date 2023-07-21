@@ -64,5 +64,7 @@ input[type="search"] {
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 24%;
+  /* position: sticky;
+  bottom: 0; */
 }
