@@ -13,13 +13,14 @@ code {
 }
 
 /* Custom CSS */
-body {
+.body {
   /* margin: 100px; */
   background-color: #f2f2f2;
   height: 100vh;
 }
 
 .sticky {
+  background-color: #f2f2f2;
   position: sticky;
   top: 0;
 }
