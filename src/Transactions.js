@@ -25,9 +25,16 @@ function Transactions() {
             <tr>
               <th scope="row">2</th>
               <td>2019-12-01</td>
-              <td>Paycheck from Bob's Burgers</td>
-              <td>Income</td>
-              <td>1000</td>
+              <td>South by Southwest Quinoa Bowl at Fresh & Co</td>
+              <td>Food</td>
+              <td>-10.55</td>
+            </tr>
+            <tr className="table-success">
+              <th scope="row">3</th>
+              <td>2019-12-02</td>
+              <td>Sunglasses, Urban Outfitters</td>
+              <td>Fashion</td>
+              <td>-24.99</td>
             </tr>
           </tbody>
         </table>
