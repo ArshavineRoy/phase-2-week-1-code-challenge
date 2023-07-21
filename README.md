@@ -117,6 +117,17 @@ The app will open on your default browser automatically when `npm start` is run,
 
 You may also see any lint errors or logs in the console.
 
+### Tree view of the component parent-child structure
+
+```text
+└── App
+    ├── Navbar
+    ├── Body
+    │   ├── Search
+    │   └── Transactions
+    └── Footer
+```
+
 ## Code Challenge Deliverables
 
 As a user should be able to:
