@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Custom CSS */
+body {
+  /* margin: 100px; */
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.my-navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 1%;
+}
+
+.my-navbar-list ul li a {
+  color: inherit;
+}
+
+.dropdown-list-item:hover {
+  color: blue;
+}
+
+.dropdown-menu {
+  /* background-color: hsl(60, 56%, 91%); */
+  background-color: whitesmoke;
+}
+
+.my-navbar-list ul li {
+  padding-inline: 10px;
+}
+
+form {
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="search"] {
+  width: 400px;
+  border: 1px solid green;
+  background-color: whitesmoke;
+}
+.table {
+  width: 85%;
+}
+.transcations {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
