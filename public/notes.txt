@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* Custom CSS */
+      body {
+        /* margin: 100px; */
+        background-color: #f2f2f2;
+        height: 100vh;
+      }
+
+      .my-navbar-list {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-right: 1%;
+      }
+
+      .my-navbar-list ul li a {
+        color: inherit;
+      }
+
+      .dropdown-list-item:hover {
+        color: blue;
+      }
+
+      .dropdown-menu {
+        /* background-color: hsl(60, 56%, 91%); */
+        background-color: whitesmoke;
+      }
+
+      .my-navbar-list ul li {
+        padding-inline: 10px;
+      }
+
+      form {
+        margin: 80px;
+        display: flex;
+        justify-content: center;
+      }
+
+      input[type='search'] {
+        width: 400px;
+        border: 1px solid green;
+        background-color: whitesmoke;
+      }
+      .table {
+        width: 85%;
+      }
+      .transcations {
+        display: flex;
+        justify-content: center;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/docs/5.3/assets/brand/bootstrap-logo.svg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Bank of Flatiron
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse my-navbar-list"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >For You</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item dropdown-list-item" href="#"
+                    >Open Account</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item dropdown-list-item" href="#"
+                    >Get a Card</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item dropdown-list-item" href="#"
+                    >Get a Loan</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item dropdown-list-item" href="#"
+                    >Investments</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item dropdown-list-item" href="#">Forex</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">For Corporates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Deals</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search Transactions"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="transcations">
+      <table class="table table-striped">
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Description</th>
+            <th scope="col">Category</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>2019-12-01</td>
+            <td>Paycheck from Bob's Burgers</td>
+            <td>Income</td>
+            <td>1000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>Copyright &copy;2023 Bank of Flatiron</footer>
+  </body>
+</html>
