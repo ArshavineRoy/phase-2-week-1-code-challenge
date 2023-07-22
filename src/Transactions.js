@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Transactions() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = () => {
+    fetch("http://localhost:3000/transactions")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  };
+
   return (
     <>
-      <div class="table-description">
+      <div className="table-description">
         <h4>Below is a list of all your transactions</h4>
       </div>
-      <div className="transcations">
+      <div className="transactions">
         <table className="table table-striped">
           <thead>
             <tr className="table-primary">
@@ -18,27 +40,15 @@ function Transactions() {
             </tr>
           </thead>
           <tbody>
-            <tr className="table-success">
-              <th scope="row">1</th>
-              <td>2019-12-01</td>
-              <td>Paycheck from Bob's Burgers</td>
-              <td>Income</td>
-              <td>1000</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>2019-12-01</td>
-              <td>South by Southwest Quinoa Bowl at Fresh & Co</td>
-              <td>Food</td>
-              <td>-10.55</td>
-            </tr>
-            <tr className="table-success">
-              <th scope="row">3</th>
-              <td>2019-12-02</td>
-              <td>Sunglasses, Urban Outfitters</td>
-              <td>Fashion</td>
-              <td>-24.99</td>
-            </tr>
+            {data.map((transaction) => (
+              <tr className="table-success" key={transaction.id}>
+                <th scope="row">{transaction.id}</th>
+                <td>{transaction.date}</td>
+                <td>{transaction.description}</td>
+                <td>{transaction.category}</td>
+                <td>{transaction.amount}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
