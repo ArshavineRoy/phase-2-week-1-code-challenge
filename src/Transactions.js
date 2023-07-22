@@ -18,13 +18,13 @@ function Transactions({ data }) {
             </tr>
           </thead>
           <tbody>
-            {data.map((transaction) => (
-              <tr className="table-success" key={transaction.id}>
-                <th scope="row">{transaction.id}</th>
-                <td>{transaction.date}</td>
-                <td>{transaction.description}</td>
-                <td>{transaction.category}</td>
-                <td>{transaction.amount}</td>
+            {data.map(({ id, date, description, category, amount }) => (
+              <tr className="table-success" key={id}>
+                <th scope="row">{id}</th>
+                <td>{date}</td>
+                <td>{description}</td>
+                <td>{category}</td>
+                <td>{amount}</td>
               </tr>
             ))}
           </tbody>
