@@ -15,9 +15,9 @@ code {
 }
 
 /* Custom CSS */
-.body {
+/* .body {
   height: 100vh;
-}
+} */
 
 .sticky {
   position: sticky;
@@ -58,24 +58,62 @@ code {
   font-weight: 500;
 }
 
-form {
+.search-bar {
   margin: 80px;
   display: flex;
   justify-content: center;
 }
 
 input[type="search"] {
-  width: 400px;
+  max-width: 400px;
+  min-width: 150px;
   border: 1px solid green;
   background-color: whitesmoke;
 }
 .table {
   width: 85%;
 }
+
+.table-description {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .transcations {
   display: flex;
   justify-content: center;
 }
+
+.add-transaction-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+.form-group input {
+  height: 50px;
+  width: 60%;
+  border: 1px solid green;
+  background-color: whitesmoke;
+}
+.form-submit {
+  width: 100px;
+  border: 1px solid green;
+  background-color: whitesmoke;
+  color: green;
+}
+
+.add-transaction-form h4 {
+  margin-bottom: 25px;
+}
+
 footer {
   display: flex;
   justify-content: center;
