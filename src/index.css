@@ -72,9 +72,10 @@ input[type="search"] {
   border: 1px solid green;
   background-color: whitesmoke;
 }
-.table {
+
+/* .table {
   width: 85%;
-}
+} */
 
 .table-description {
   margin-bottom: 20px;
@@ -82,10 +83,10 @@ input[type="search"] {
   justify-content: center;
 }
 
-.transcations {
+/* .transcations {
   display: flex;
   justify-content: center;
-}
+} */
 
 .add-transaction-form {
   display: flex;
