@@ -3,6 +3,9 @@ import React from "react";
 function Transactions() {
   return (
     <>
+      <div class="table-description">
+        <h4>Below is a list of all your transactions</h4>
+      </div>
       <div className="transcations">
         <table className="table table-striped">
           <thead>
