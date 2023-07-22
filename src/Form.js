@@ -7,7 +7,7 @@ function Form() {
         <form className="add-transaction-form">
           <h4>Add a transaction</h4>
           <div className="form-group">
-            <label for="dateInput">Date</label>
+            <label htmlFor="dateInput">Date</label>
             <input
               type="date"
               className="form-control"
@@ -16,7 +16,7 @@ function Form() {
             />
           </div>
           <div className="form-group">
-            <label for="descriptionInput">Description</label>
+            <label htmlFor="descriptionInput">Description</label>
             <input
               type="text"
               className="form-control"
@@ -25,7 +25,7 @@ function Form() {
             />
           </div>
           <div className="form-group">
-            <label for="categoryInput">Category</label>
+            <label htmlFor="categoryInput">Category</label>
             <input
               type="text"
               className="form-control"
@@ -34,7 +34,7 @@ function Form() {
             />
           </div>
           <div className="form-group">
-            <label for="amountInput">Amount</label>
+            <label htmlFor="amountInput">Amount</label>
             <input
               type="number"
               className="form-control"
