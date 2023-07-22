@@ -1,28 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function Transactions() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = () => {
-    fetch("http://localhost:3000/transactions")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  };
-
+function Transactions({ data }) {
   return (
     <>
       <div className="table-description">
