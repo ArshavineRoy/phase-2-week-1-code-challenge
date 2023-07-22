@@ -3,7 +3,7 @@ import React from "react";
 function Search() {
   return (
     <div className="container-fluid">
-      <form className="d-flex" role="search">
+      <form className="d-flex search-bar" role="search">
         <input
           className="form-control me-2"
           type="search"
