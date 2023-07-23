@@ -41,23 +41,21 @@ function Transactions({ data, onDeleteTransaction }) {
             ) : (
               // Render the data when the page loads or if transactions are found
               data.map(({ id, date, description, category, amount }) => (
-                <>
-                  <tr className="table-success" key={id}>
-                    <td>{date}</td>
-                    <td>{description}</td>
-                    <td>{category}</td>
-                    <td>{amount}</td>
-                    <td className="delete-container">
-                      {" "}
-                      <button
-                        className="delete-btn"
-                        onClick={() => handleDelete(id)} // Call handleDelete function with the transaction id on button click
-                      >
-                        Delete
-                      </button>
-                    </td>
-                  </tr>
-                </>
+                <tr className="table-success" key={id}>
+                  <td>{date}</td>
+                  <td>{description}</td>
+                  <td>{category}</td>
+                  <td>{amount}</td>
+                  <td className="delete-container">
+                    {" "}
+                    <button
+                      className="delete-btn"
+                      onClick={() => handleDelete(id)} // Call handleDelete function with the transaction id on button click
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
               ))
             )}
           </tbody>
