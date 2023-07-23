@@ -39,10 +39,11 @@ code {
 
 .dropdown-list-item:hover {
   color: blue;
+  background-color: #d1e7dd;
 }
 
 .dropdown-menu {
-  background-color: whitesmoke;
+  background-color: #d1e7dd;
 }
 
 .my-navbar-list ul li {
@@ -79,23 +80,12 @@ input[type="search"] {
   background-color: whitesmoke;
 }
 
-/* .table {
-  width: 85%;
-} */
-
-/* .table-container {
-  padding-inline: 8%;
-} */
-
 .table-description {
-  margin-bottom: 20px;
+  padding-block: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-/* .transcations {
-
-} */
 
 .add-transaction-form {
   display: flex;
