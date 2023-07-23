@@ -95,13 +95,11 @@ input[type="search"] {
 }
 
 .delete-header {
-  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .delete-container {
-  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

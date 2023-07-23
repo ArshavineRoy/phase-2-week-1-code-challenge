@@ -32,7 +32,7 @@ function Transactions({ data, onDeleteTransaction }) {
 
             {data.length === 0 ? (
               <tr className="table-danger">
-                <td colSpan="4">
+                <td colSpan="5">
                   <p className="table-message">
                     No transactions matching that description were found
                   </p>
