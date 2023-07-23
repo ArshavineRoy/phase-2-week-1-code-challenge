@@ -1,6 +1,11 @@
 import React from "react";
 
-function Transactions({ data }) {
+function Transactions({ data, onDeleteTransaction }) {
+  const handleDelete = (id) => {
+    // Call the onDeleteTransaction function with the id of the transaction to be deleted
+    onDeleteTransaction(id);
+  };
+
   return (
     <div className="table-container">
       <div className="table-description">
@@ -44,7 +49,12 @@ function Transactions({ data }) {
                     <td>{amount}</td>
                     <td className="delete-container">
                       {" "}
-                      <button className="delete-btn">Delete</button>
+                      <button
+                        className="delete-btn"
+                        onClick={() => handleDelete(id)} // Call handleDelete function with the transaction id on button click
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 </>

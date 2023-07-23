@@ -49,13 +49,37 @@ function Body() {
     setData((prevData) => [...prevData, newTransaction]);
   };
 
+  // Function to delete a transaction from the server and update the data state
+  const deleteTransaction = async (id) => {
+    try {
+      // Make an HTTP DELETE request to the server's API to delete the transaction
+      const response = await fetch(`http://localhost:3000/transactions/${id}`, {
+        method: "DELETE",
+      });
+
+      if (!response.ok) {
+        throw new Error("Error deleting transaction.");
+      }
+
+      // Update the data state by filtering out the deleted transaction
+      setData((prevData) =>
+        prevData.filter((transaction) => transaction.id !== id)
+      );
+    } catch (error) {
+      console.error("Error deleting transaction:", error);
+    }
+  };
+
   return (
     <div className="main-body">
       {/* Render the Search component and pass 'handleSearch' function as 'onSearch' prop */}
       <Search onSearch={handleSearch} />
 
       {/* Render the Transactions component and pass 'filteredData' as 'data' prop */}
-      <Transactions data={filteredData} />
+      <Transactions
+        data={filteredData}
+        onDeleteTransaction={deleteTransaction}
+      />
 
       {/* Render the Form component */}
       <Form addTransaction={addTransaction} />
