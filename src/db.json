@@ -118,6 +118,20 @@
       "category": "Food",
       "amount": 100,
       "id": 17
+    },
+    {
+      "date": "2023-07-24",
+      "description": "Laptop",
+      "category": "assets",
+      "amount": 8000,
+      "id": 18
+    },
+    {
+      "date": "2023-07-23",
+      "description": "Bob's burgers",
+      "category": "Food",
+      "amount": 4300,
+      "id": 19
     }
   ]
 }

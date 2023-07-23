@@ -23,7 +23,8 @@ code {
   position: sticky;
   top: 0;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  background-color: #c7dbd2;
+  background-color: #d1e7dd;
+  border-radius: 0 0 15px 15px;
 }
 
 .my-navbar-list {
@@ -60,21 +61,30 @@ code {
   font-weight: 500;
 }
 
+.main-body {
+  padding-inline: 8%;
+}
+
 .search-bar {
-  margin: 60px;
+  margin: 80px;
   display: flex;
   justify-content: center;
 }
 
 input[type="search"] {
-  max-width: 400px;
+  max-width: 500px;
   min-width: 150px;
+  height: 48px;
   border: 1px solid green;
   background-color: whitesmoke;
 }
 
 /* .table {
   width: 85%;
+} */
+
+/* .table-container {
+  padding-inline: 8%;
 } */
 
 .table-description {
@@ -84,8 +94,7 @@ input[type="search"] {
 }
 
 /* .transcations {
-  display: flex;
-  justify-content: center;
+
 } */
 
 .add-transaction-form {
@@ -124,4 +133,6 @@ footer {
   padding-block: 10px;
   margin-top: 3%;
   font-weight: 500;
+  background-color: #d1e7dd;
+  border-radius: 15px 15px 0 0;
 }

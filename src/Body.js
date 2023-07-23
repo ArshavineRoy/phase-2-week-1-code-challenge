@@ -50,7 +50,7 @@ function Body() {
   };
 
   return (
-    <div>
+    <div className="main-body">
       {/* Render the Search component and pass 'handleSearch' function as 'onSearch' prop */}
       <Search onSearch={handleSearch} />
 
