@@ -17,14 +17,30 @@ function Transactions({ data }) {
             </tr>
           </thead>
           <tbody>
-            {data.map(({ id, date, description, category, amount }) => (
-              <tr className="table-success" key={id}>
-                <td>{date}</td>
-                <td>{description}</td>
-                <td>{category}</td>
-                <td>{amount}</td>
+            {/* Conditional ternary operator to check if the data array has data or is empty (no search term found)
+          and render the table accordingly */}
+
+            {/* Render message if no transactions found */}
+
+            {data.length === 0 ? (
+              <tr className="table-danger">
+                <td colSpan="4">
+                  <p className="table-message">
+                    No transactions matching that description were found
+                  </p>
+                </td>
               </tr>
-            ))}
+            ) : (
+              // Render the data when the page loads or if transactions are found
+              data.map(({ id, date, description, category, amount }) => (
+                <tr className="table-success" key={id}>
+                  <td>{date}</td>
+                  <td>{description}</td>
+                  <td>{category}</td>
+                  <td>{amount}</td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>

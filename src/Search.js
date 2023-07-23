@@ -18,7 +18,6 @@ function Search({ onSearch }) {
     back to Body component for filtering */
 
     onSearch(term);
-    onSearch(term);
   };
 
   return (
