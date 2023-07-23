@@ -43,6 +43,12 @@ function Body() {
     transaction.description?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // Function to add a new transaction to the data state
+  const addTransaction = (newTransaction) => {
+    // Create a copy of the current data state and add the newTransaction
+    setData((prevData) => [...prevData, newTransaction]);
+  };
+
   return (
     <div>
       {/* Render the Search component and pass 'handleSearch' function as 'onSearch' prop */}
@@ -52,7 +58,7 @@ function Body() {
       <Transactions data={filteredData} />
 
       {/* Render the Form component */}
-      <Form />
+      <Form addTransaction={addTransaction} />
     </div>
   );
 }

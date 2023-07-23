@@ -97,6 +97,27 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
+    },
+    {
+      "date": "2023-07-24",
+      "description": "Bob's burgers",
+      "category": "Food",
+      "amount": 3000,
+      "id": 15
+    },
+    {
+      "date": "2023-07-16",
+      "description": "COD",
+      "category": "Gaming",
+      "amount": 5000,
+      "id": 16
+    },
+    {
+      "date": "2023-07-17",
+      "description": "Bob's burgers",
+      "category": "Food",
+      "amount": 100,
+      "id": 17
     }
   ]
 }

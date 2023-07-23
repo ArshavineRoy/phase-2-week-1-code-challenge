@@ -10,7 +10,6 @@ function Transactions({ data }) {
         <table className="table table-striped">
           <thead>
             <tr className="table-primary">
-              <th scope="col">No.</th>
               <th scope="col">Date</th>
               <th scope="col">Description</th>
               <th scope="col">Category</th>
@@ -20,7 +19,6 @@ function Transactions({ data }) {
           <tbody>
             {data.map(({ id, date, description, category, amount }) => (
               <tr className="table-success" key={id}>
-                <th scope="row">{id}</th>
                 <td>{date}</td>
                 <td>{description}</td>
                 <td>{category}</td>
