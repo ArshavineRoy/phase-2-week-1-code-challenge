@@ -4,7 +4,7 @@ function Transactions({ data }) {
   return (
     <div className="table-container">
       <div className="table-description">
-        <h4>Below is a list of all your transactions</h4>
+        <h4>The table below is a list of all your transactions</h4>
       </div>
       <div className="transactions">
         <table className="table table-striped">
