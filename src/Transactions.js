@@ -14,6 +14,9 @@ function Transactions({ data }) {
               <th scope="col">Description</th>
               <th scope="col">Category</th>
               <th scope="col">Amount</th>
+              <th className="delete-header" scope="col">
+                Delete
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -33,12 +36,18 @@ function Transactions({ data }) {
             ) : (
               // Render the data when the page loads or if transactions are found
               data.map(({ id, date, description, category, amount }) => (
-                <tr className="table-success" key={id}>
-                  <td>{date}</td>
-                  <td>{description}</td>
-                  <td>{category}</td>
-                  <td>{amount}</td>
-                </tr>
+                <>
+                  <tr className="table-success" key={id}>
+                    <td>{date}</td>
+                    <td>{description}</td>
+                    <td>{category}</td>
+                    <td>{amount}</td>
+                    <td className="delete-container">
+                      {" "}
+                      <button className="delete-btn">Delete</button>
+                    </td>
+                  </tr>
+                </>
               ))
             )}
           </tbody>

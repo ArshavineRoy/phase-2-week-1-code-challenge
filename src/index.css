@@ -15,9 +15,6 @@ code {
 }
 
 /* Custom CSS */
-/* .body {
-  height: 100vh;
-} */
 
 .sticky {
   position: sticky;
@@ -97,6 +94,31 @@ input[type="search"] {
   margin-top: 10px;
 }
 
+.delete-header {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-container {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-btn {
+  padding-block: 1px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  border: 1px solid blue;
+  background-color: blue;
+}
 .add-transaction-form {
   display: flex;
   flex-direction: column;
