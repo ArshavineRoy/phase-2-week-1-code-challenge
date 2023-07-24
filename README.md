@@ -15,6 +15,23 @@ Bank of Flatiron is a React mini web app built as part of Phase 2: Week 1 code c
 
 This application displays a list of your recent bank transactions, among other features.
 
+## Features
+
+- View all transactions on the homepage
+  ![homepage](public/homepage.png)
+
+- Search for transactions by description in the search bar
+  ![search](public/search-transaction.png)
+
+- Alert if no transaction found
+  ![alert](public/transaction-not-found.png)
+
+- Add a transaction to the table using the form
+  ![add transaction](public/add-transaction.png)
+
+- Delete a transaction from the list using the delete button
+  ![homepage](public/delete-transaction.png)
+
 ## Dependencies
 
 ### Prerequisites
@@ -29,12 +46,6 @@ Before running this app, make sure you have the following installed on your syst
 - React (v18.2.0)
 - React DOM (v18.2.0)
 - React Scripts (v5.0.1)
-
-<!-- - ### Development Dependencies
-
-Jest (v27.0.4) - For running unit tests.
-- ESLint (v7.32.0) - For linting the code and maintaining code quality.
-- Prettier (v9.19.0) - For code formatting consistency.-->
 
 ## Project Setup
 
@@ -124,7 +135,8 @@ You may also see any lint errors or logs in the console.
     ├── Navbar
     ├── Body
     │   ├── Search
-    │   └── Transactions
+    │   ├── Transactions
+    │   └── Form
     └── Footer
 ```
 
