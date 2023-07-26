@@ -15,7 +15,7 @@ function Body() {
 
   // Function to fetch data from the server
   const fetchData = () => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://bank-of-flatiron-server.onrender.com/transactions")
       .then((response) => {
         if (!response.ok) {
           // handle errors on fetch
@@ -53,9 +53,12 @@ function Body() {
   const deleteTransaction = async (id) => {
     try {
       // Make an HTTP DELETE request to the server's API to delete the transaction
-      const response = await fetch(`http://localhost:3000/transactions/${id}`, {
-        method: "DELETE",
-      });
+      const response = await fetch(
+        `https://bank-of-flatiron-server.onrender.com/transactions/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Error deleting transaction.");

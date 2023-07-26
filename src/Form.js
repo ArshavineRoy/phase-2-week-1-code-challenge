@@ -22,13 +22,16 @@ function Form({ addTransaction }) {
     // Check if the response is successful (status code 200s)
     try {
       // Make an HTTP POST request to the server's API to add the new transaction
-      const response = await fetch("http://localhost:3000/transactions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newTransaction),
-      });
+      const response = await fetch(
+        "https://bank-of-flatiron-server.onrender.com/transactions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTransaction),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Error adding transaction.");
